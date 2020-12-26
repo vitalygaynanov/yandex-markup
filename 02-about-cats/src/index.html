@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>02-about-cats</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <header class="shop-name">Мурмаркет</header>
+    <main class="carousel">
+      <input type="radio" name="cat-button" id="first" class="first button" checked>
+      <input type="radio" name="cat-button" id="second" class="second button">
+      <input type="radio" name="cat-button" id="third" class="third button">
+      <input type="radio" name="cat-button" id="fourth" class="fourth button">
+      <input type="radio" name="cat-button" id="fifth" class="fifth button">
+      <input type="radio" name="cat-button" id="sixth" class="sixth button">
+      <input type="radio" name="cat-button" id="seventh" class="seventh button">
+      <input type="radio" name="cat-button" id="eighth" class="eighth button">
+      <input type="radio" name="cat-button" id="ninth" class="ninth button">
+      <input type="radio" name="cat-button" id="tenth" class="tenth button">
+      <div class="cat-list">
+
+        <div class="cat first-cat">
+          <label for="first">
+            <img src="../img/1.jpg"  alt="Кот Бора">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#bora">Бора</a>
+          </div>
+        </div>
+
+        <div class="cat second-cat">
+          <label for="second">
+            <img src="../img/2.jpg" alt="Кот Лео">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#leo">Лео</a>
+          </div>
+        </div>
+
+        <div class="cat third-cat">
+          <label for="third">
+            <img src="../img/3.jpg" alt="Кот Дуся">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#dusya">Дуся</a>
+          </div>
+        </div>
+
+        <div class="cat fourth-cat">
+          <label for="fourth">
+            <img src="../img/4.jpg" alt="Кот Пушок">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#pushok">Пушок</a>
+          </div>
+        </div>
+
+        <div class="cat fifth-cat">
+          <label for="fifth">
+            <img src="../img/5.jpg" alt="Кот Миша">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#misha">Миша</a>
+          </div>
+        </div>
+
+        <div class="cat sixth-cat">
+          <label for="sixth">
+            <img src="../img/6.jpg" alt="Кот Лысый">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#lysiy">Лысый</a>
+          </div>
+        </div>
+
+        <div class="cat seventh-cat">
+          <label for="seventh">
+            <img src="../img/7.jpg" alt="Кот Барсик">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#barsik">Барсик</a>
+          </div>
+        </div>
+
+        <div class="cat eighth-cat">
+          <label for="eighth">
+            <img src="../img/8.jpg" alt="Кот Колобок">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#kolobok">Колобок</a>
+          </div>
+        </div>
+
+        <div class="cat ninth-cat">
+          <label for="ninth">
+            <img src="../img/9.jpg" alt="Кот Короста">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#korosta">Короста</a>
+          </div>
+        </div>
+
+        <div class="cat tenth-cat">
+          <label for="tenth">
+            <img src="../img/10.jpg" alt="Кот Кузя">
+          </label>
+          <div class="image-name">
+            <a class="link-to-modal-view" href="#kuzya">Кузя</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="radio-buttons">
+        <label for="first" class="circle first-circle">
+          <a class="link-to-modal-view" href="#bora"></a>
+        </label>
+        <label for="second" class="circle second-circle">
+          <a class="link-to-modal-view" href="#leo"></a>
+        </label>
+        <label for="third" class="circle third-circle">
+          <a class="link-to-modal-view" href="#dusya"></a>
+        </label>
+        <label for="fourth" class="circle fourth-circle">
+          <a class="link-to-modal-view" href="#pushok"></a>
+        </label>
+        <label for="fifth" class="circle fifth-circle">
+          <a class="link-to-modal-view" href="#misha"></a>
+        </label>
+        <label for="sixth" class="circle sixth-circle">
+          <a class="link-to-modal-view" href="#lysiy"></a>
+        </label>
+        <label for="seventh" class="circle seventh-circle">
+          <a class="link-to-modal-view" href="#barsik"></a>
+        </label>
+        <label for="eighth" class="circle eighth-circle">
+          <a class="link-to-modal-view" href="#kolobok"></a>
+        </label>
+        <label for="ninth" class="circle ninth-circle">
+          <a class="link-to-modal-view" href="#korosta"></a>
+        </label>
+        <label for="tenth" class="circle tenth-circle">
+          <a class="link-to-modal-view" href="#kuzya"></a>
+        </label>
+      </div>
+      <div class="modal-views">
+        <div class="modal-view bora" id="bora">
+          <aside class="photo">
+            <img class="horizontal" src="../img/1.jpg" alt="Кот Бора">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Бора</p>
+            <p class="bio">
+              Порода: британская<br>
+              Возраст: 6 месяцев<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Гордый самостоятельный кот. Плохо ладит с детьми и другими животными.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view leo" id="leo">
+          <aside class="photo">
+            <img class="horizontal" src="../img/2.jpg" alt="Кот Лео">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Лео</p>
+            <p class="bio">
+              Порода: вислоухая<br>
+              Возраст: 1 год<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Серьезный и вдумчивый кот. Хорошо ладит с другими животными, но
+              плохо с детьми. Нуждается в регулярном вычесывании.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view dusya" id="dusya">
+          <aside class="photo">
+            <img class="horizontal" src="../img/3.jpg" alt="Кот Дуся">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Дуся</p>
+            <p class="bio">
+              Порода: сиамская<br>
+              Возраст: 9 месяцев<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Игривая и веселая кошечка, можно брать в пару к другим питомцам
+              или детям.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view pushok" id="pushok">
+          <aside class="photo">
+            <img class="horizontal" src="../img/4.jpg" alt="Кот Пушок">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Пушок</p>
+            <p class="bio">
+              Порода: персидская<br>
+              Возраст: 4 года<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Ленивый и толстенький кот. Привередлив в еде. Будет спать,
+              где захочет.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view misha" id="misha">
+          <aside class="photo">
+            <img class="horizontal" src="../img/5.jpg" alt="Кот Миша">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Миша</p>
+            <p class="bio">
+              Порода: мейн-кун<br>
+              Возраст: 5 лет<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Хороший охотник, избавит дом от любой нежелательной живности.
+              С детьми ладит хорошо.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view lysiy" id="lysiy">
+          <aside class="photo">
+            <img class="horizontal" src="../img/6.jpg" alt="Кот Лысый">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Лысый</p>
+            <p class="bio">
+              Порода: сфинкс<br>
+              Возраст: 1 год<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Молодой стеснительный котик. Нуждается в большом количестве
+              любви и ласки. Хорошо подойдет одиноким людям.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view barsik" id="barsik">
+          <aside class="photo">
+            <img class="horizontal" src="../img/7.jpg" alt="Кот Барсик">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Барсик</p>
+            <p class="bio">
+              Порода: бирманская<br>
+              Возраст: 3 года<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Маленький игривый клубочек шерсти, не любящий сидеть на одном
+              месте. Очень ласковый, идеальный выбор для семейной пары с детьми.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view kolobok" id="kolobok">
+          <aside class="photo">
+            <img class="horizontal" src="../img/8.jpg" alt="Кот Колобок">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Колобок</p>
+            <p class="bio">
+              Порода: гималайская<br>
+              Возраст: 6 лет<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Большой волосатый комок любви. Любит делать кусь за пяточки.
+              Не любит чужих людей и других животных.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view korosta" id="korosta">
+          <aside class="photo">
+            <img class="horizontal" src="../img/9.jpg" alt="Кот Короста">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Короста</p>
+            <p class="bio">
+              Порода: ориентальная<br>
+              Возраст: 3 года<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Добродушный и немного ленивый кот. Отлично ладит со всеми
+              людьми и животными.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-view kuzya" id="kuzya">
+          <aside class="photo">
+            <img class="horizontal" src="../img/10.jpg" alt="Кот Кузя">
+          </aside>
+          <aside class="closer"><a href="#">&times;</a></aside>
+          <div class="info">
+            <p class="cat-name">Кузя</p>
+            <p class="bio">
+              Порода: рагамаффин<br>
+              Возраст: 2 года<br>
+              Болезни: нет
+            </p>
+            <p class="status">
+              Статус: ищет хозяина
+            </p>
+            <p class="more-bio">
+              Спокойный и рассудительный кот, хорошо уживается с остальными
+              котами. С другими видами домашних животных не ладит.
+              Привередлив в еде.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="contacts">
+      <p class="contact">
+        Напишите нам:
+        <br>&#9993;
+        <a href="mailto:cats@babuli.ru" class="mail">cats@babuli.tu</a>
+        <br>&#9993;
+        <a href="mailto:vnuchek@babuli.ru" class="mail">vnuchek@babuli.ru</a><br>
+      </p>
+      <p class="organization">
+        &copy; 2020 ООО &laquo;<a href="https://cats.com">Бабушкины котятки</a>&raquo;
+      </p>
+    </footer>
+  </body>
+</html>

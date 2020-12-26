@@ -1,0 +1,151 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  position: relative;
+
+  box-sizing: border-box;
+
+  min-height: 100%;
+}
+
+.view {
+  display: none;
+}
+
+label[for='view'] {
+  position: relative;
+
+  display: inline-block;
+
+  margin-left: 15px;
+
+  transition: 0.2s;
+
+  cursor: pointer;
+
+  font-size: 32px;
+}
+
+.view:checked + label {
+  transform: rotate(90deg);
+}
+
+.cards {
+  position: static;
+
+  display: block;
+
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+.card {
+  display: inline-block;
+
+  width: 20%;
+  min-width: 300px;
+  margin: 0 12px 12px 0;
+
+  border: 1px solid gray;
+}
+
+.card:hover {
+  box-shadow: 0 0 9px lightgray;
+}
+
+.cat-name {
+  overflow: hidden;
+
+  padding: 20px 4px 4px 12px;
+
+  font-size: 24px;
+
+  text-overflow: ellipsis;
+}
+
+.link,
+.link:visited {
+  color: black;
+}
+
+.link:hover {
+  color: red;
+}
+
+.cat-description {
+  padding: 12px;
+
+  color: #585858;
+}
+
+.cat-description:hover {
+  color: black;
+}
+
+.img-wrapper {
+  display: block;
+  overflow: hidden;
+
+  width: 300px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+
+  object-fit: cover;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: cover;
+}
+
+img:hover {
+  transition: 0.2s;
+  transform: scale(1.01);
+}
+
+.view:checked ~ .cards .card {
+  width: 50%;
+
+  margin: auto 25% 5px 25%;
+}
+
+.view:checked ~ .cards .img-wrapper {
+  float: none;
+
+  width: 90%;
+  min-width: 100px;
+  height: 90%;
+  margin: 5% auto 3% auto;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+.view:checked ~ .cards .cat-name {
+  display: inline;
+
+  padding-left: 5%;
+
+  font-size: 24px;
+}
+
+.view:checked ~ .cards .diseases,
+.view:checked ~ .cards .breed,
+.view:checked ~ .cards .age,
+.view:checked ~ .cards .status,
+.view:not(:checked) ~ .cards .full-description {
+  display: none;
+}
+
+.view:checked ~ .cards .full-description {
+  display: block;
+
+  padding-left: 3.5%;
+
+  text-align: left;
+}
